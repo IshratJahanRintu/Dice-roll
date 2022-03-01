@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e35 100%);
+  margin: 0;
+}
+.container {
+  display: flex;
+
+  width: 57%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  margin: 0;
+  padding: 0%;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.player {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: 0.6s ease;
+}
+.current {
+  display: block;
+
+  margin-top: 100px;
+  background-color: rgba(191, 46, 86, 0.7);
+
+  width: 180px;
+  height: 120px;
+  margin-bottom: 45px;
+  border-radius: 10px;
+  color: white;
+}
+
+.current-score {
+  font-size: 34px;
+  margin: 0;
+  text-align: center;
+}
+.current-score-label {
+  font-size: 16px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.player-name {
+  margin: 75px 0 40px 0;
+}
+
+.player-0,
+.player-1 {
+  background-color: rgb(176, 110, 137);
+}
+
+.player.active {
+  background-color: rgb(212, 162, 179);
+}
+.total-score {
+  margin: 0;
+  font-size: 64px;
+  color: rgb(191, 46, 86);
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 30%;
+  height: 100%;
+}
+
+#dice-face {
+  width: 90px;
+  height: 90px;
+}
+
+.roll-dice {
+  display: flex;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: none;
+
+  margin: 75px 0 30px 0;
+}
+#roll {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+}
+.hold {
+  width: 110px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.new-game {
+  width: 150px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+
+  margin: 35px 0 65px 0;
+}
+.reset {
+  margin-right: 5px;
+}
+button:focus {
+  outline: none;
+}
+button:active {
+  transform: scale(0.96);
+}
+button {
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.7;
+}
+
+.hidden-dice-face {
+  opacity: 0;
+}
